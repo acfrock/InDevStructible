@@ -26,6 +26,10 @@ public class Tile {
 		if(hitPoints > 0){ 
 			hitPoints--;
 		}
+		if (isDamagable && hitPoints == 1){
+			displayChar = Character.toLowerCase(displayChar);
+		}
+		
 	}
 	
 	
