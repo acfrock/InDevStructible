@@ -1,14 +1,12 @@
 
-public class Tile 
-{
+public class Tile {
 	char displayChar;
 	boolean isObstruction;
 	int hitPoints;
 	Point position;
 	boolean isDamagable;
 	
-	public Tile(int x, int y)
-	{
+	public Tile(int x, int y){
 		displayChar = '.';
 		isObstruction = false;
 		hitPoints = 0;
@@ -16,8 +14,7 @@ public class Tile
 		isDamagable = false;
 	}
 	
-	public Tile(char disp, boolean obst, int hit, Point pos, boolean dmg)
-	{
+	public Tile(char disp, boolean obst, int hit, Point pos, boolean dmg){
 		displayChar = disp;
 		isObstruction = obst;
 		hitPoints = hit;
@@ -25,9 +22,16 @@ public class Tile
 		isDamagable = dmg;
 	}
 	 
-	public void takeDmg()
-	{
-		hitPoints--;
+	public void takeDmg(){
+		if(hitPoints > 0){ 
+			hitPoints--;
+		}
 	}
+	
+	
+	public Point getPosition(){
+		return position;
+	}
+	
 	
 }
