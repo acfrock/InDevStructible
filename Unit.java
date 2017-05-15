@@ -6,7 +6,7 @@ public abstract class Unit extends Tile{
 	}
 
 	public void moveTo(Point p){
-		this.setPosition(p);
+		this.position = p;
 	}
 	
 }
