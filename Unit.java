@@ -1,12 +1,16 @@
+package game;
 
-public abstract class Unit extends Tile{
+public abstract class Unit extends Tile
+{
 
-	public Unit(char disp, boolean obst, int hit, Point pos, boolean dmg) {
-		super(disp, obst, hit, pos, dmg);
-	}
+    public Unit(char disp, boolean obst, int hit, Point pos, boolean dmg)
+    {
+        super(disp, obst, hit, pos, dmg);
+    }
 
-	public void moveTo(Point p){
-		this.position = p;
-	}
-	
+    public void moveTo(Point p)
+    {
+        position = p;
+    }
+
 }
