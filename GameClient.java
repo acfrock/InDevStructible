@@ -118,8 +118,9 @@ public class GameClient {
 			
 			if(map[1][x][y] == null){
 				map[1][x][y] = new Alien(new Point(x,y));
+				aliens[i] = (Alien) map[1][x][y];
 			}else{
-				nbAliens++;
+				i--;
 			}
 		}
 
